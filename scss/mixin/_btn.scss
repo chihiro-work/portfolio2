@@ -1,0 +1,26 @@
+.btn-wrap {
+    text-align: center;
+    width: 100%;
+}
+
+.common-btn {
+    padding: 19px 71px;
+    background-color: #F7D43F;
+    box-shadow: 0 0 6px #1B1310;
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    line-height: 1.875;
+    border-radius: 2em;
+    font-family: $en-text;
+    color: #171717;
+    font-size: 16px;
+    border: 1px solid #F7D43F;
+
+    &:hover {
+        background-color: #171717;
+        color: #F7D43F;
+    }
+}
+
+
+

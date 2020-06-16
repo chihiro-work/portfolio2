@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* 設定（文字色などの変数まとめ） */
+@import "setting/_config";
+
+/* ページ共通 */
+@import "base/_base";
+
+/* 共通パーツ */
+@import "mixin/_construction";
+@import "mixin/_text";
+@import "mixin/_btn";
+
+@import "module/_header";
+
+/* トップページ */
+#_top {
+    @import "page/_top-page";
+}
+
+/* コンタクトページ */
+#_contact {
+    @import "page/_contact-page";
+}
+
+/* フッター */
+@import "module/_footer";
+
+/* レスポンシブ */
+@import "mixin/_responsive";
+
+/* ハンバーガーメニュー */
+@import "module/_humbergur.scss";

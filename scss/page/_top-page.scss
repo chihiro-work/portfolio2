@@ -1,0 +1,231 @@
+main {
+
+    //スライダー
+    .s-content {
+        position: relative;
+
+        img {
+            width: 100%;
+        }
+        .s-text {
+            position: absolute;
+            top: 50.5%;
+            left: 7.7%;
+            color: $font-white;
+
+            h2 {
+                font-weight: bold;
+                font-size: 70px;
+                letter-spacing: 3.5px;
+                line-height: 0.7142857142857143;
+                margin-bottom: 23px;
+            }
+            h3 {
+                font-family: $jp-text;
+                font-weight: bold;
+                font-size: 40px;
+                letter-spacing: 2px;
+                line-height: 1.25;
+            }
+        }
+    }
+    //コンセプト
+    .concept-container {
+        .headline-wrap {
+            margin-left: 15.27%;
+        }
+        h3 {
+            height: 95px;
+            text-align: center;
+            margin: 0 auto;
+            font-family: $jp-text;
+            font-weight: bold;
+            font-size: 29px;
+            letter-spacing: 1.5px;
+            line-height: 1.666666666666667;
+            color: #171717;
+            margin-bottom: 60px;
+        }
+        .concept-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 70px;
+
+            .concept-text {
+                width: 440px;
+                font-family: $jp-text;
+                font-weight: bold;
+                font-size: 16px;
+                letter-spacing: 0.8px;
+                line-height: 1.875;
+                color: #171717;
+                margin: 0 7.58% 0 10px;
+            }
+            .concept-img {
+                img {
+                    width: 100%;
+                }
+            }
+        }
+        .bg-text {
+            padding-right: 8.333333333333333%;
+        }
+
+    }
+
+    //ワークス
+    .works-container {
+        margin-top: 70px;
+        width: 100%;
+        padding: 104px 121px 70px 119px;
+        background-image: url("../img/works-bgi@2x.jpg");
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+
+        .headline-wrap {
+            text-align: right;
+            margin-bottom: 80px;
+
+            h2 {
+                color: $font-white;
+                letter-spacing: 6px;
+                line-height: 0.8;
+            }
+
+            hr {
+                background-color: #FFF;
+                left: 121.3%;
+            }
+        }
+        .works {
+            display: flex;
+            justify-content: center;
+            padding: 0 10%;
+            overflow: hidden;
+            margin-bottom: 80px;
+
+            .work {
+                width: 32%;
+                margin-right: 20px;
+
+                &:last-of-type {
+                    margin-right: 0;
+                }
+
+                .work-img {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+                .work-text {
+                    background-color: #FFF;
+                    padding: 25px 20px;
+                    color: #141414;
+                    font-family: $jp-text;
+                    font-size: 16px;
+                    letter-spacing: 0.8px;
+                    line-height: 1.875;
+                    height: 100%;
+                }
+            }
+        }
+        .bg-text {
+            line-height: 1.666666666666667;
+            color: $bg-black-text;
+            text-align: left;
+        }
+    }
+
+    //サービス
+    .service-container {
+        padding-bottom: 70px;
+
+        .headline-wrap {
+            margin: 0 0 80px 15.27%;
+
+            h2 {
+                letter-spacing: 6px;
+                line-height: 0.8;
+                color: $font-black;
+            }
+        }
+        .services {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 70px;
+
+            .service {
+                position: relative;
+                width: 100%;
+
+                .service-img {
+                    img {
+                        width: 100%;
+                    }
+                }
+
+                .service-text {
+                    color: $font-white;
+                    font-weight: bold;
+                    font-style: italic;
+                    font-size: 40px;
+                    letter-spacing: 2px;
+                    line-height: 1.25;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        .bg-text {
+            padding-right: 8.333333333333333%;
+        }
+    }
+
+    //コンタクト
+    .contact-container {
+        background-image: url("../img/contact-bgi@2x.jpg");
+        width: 100%;
+        padding: 109px 120px 70px 120px;
+        background-size: cover;
+
+        .headline-wrap {
+            text-align: right;
+            margin-bottom: 80px;
+
+            h2 {
+                letter-spacing: 6px;
+                line-height: 0.8;
+                color: $font-white;
+            }
+            hr {
+                background-color: $font-white;
+            }
+        }
+        p {
+            text-align: center;
+            color: $font-white;
+            font-family: $jp-text;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 1.35;
+            margin-bottom: 40px;
+        }
+        .btn-wrap {
+            margin-bottom: 70px;
+        }
+        .bg-text {
+            font-family: $jp-text;
+            color: $font-white;
+            opacity: 0.05;
+            text-align: left;
+        }
+    }
+}

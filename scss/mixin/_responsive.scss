@@ -1,0 +1,409 @@
+/*----------------------
+タブレット
+----------------------*/
+@media screen and (max-width:959px){
+
+    /* ------ 共通 --------*/
+    #_top, #_contact {
+        .common-container {
+            width: 100%;
+
+            .headline-wrap {
+                margin-bottom: 51px;
+                text-align: left;
+
+                h2 {
+                    font-size: 46px;
+                    letter-spacing: 3px;
+                    margin: 0;
+                }
+                hr {
+                    width: 90px;
+                    transform: translate(10px, -6px);
+                }
+            }
+        }
+    }
+
+    /* ------ トップページ --------*/
+    #_top {
+
+        /* ヘッダー*/
+        header {
+            padding: 0 15px;
+            justify-content: space-between;
+
+            .header-right {
+                display: none;
+            }
+            .sp-menu-icon {
+                display: block;
+            }
+            .sp-close-icon {
+                right: 13px;
+                top: 46px;
+            }
+        }
+
+        /* メイン */
+        main {
+
+            /* スライダー*/
+            .s-content {
+                img {
+                    height: 599px;
+                }
+                .s-text {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    h2 {
+                        font-size: 46px;
+                        letter-spacing: 1.85px;
+                        line-height: 1.25;
+                    }
+                    h3 {
+                        font-size: 28px;
+                        letter-spacing: 1.5px;
+                        line-height: 1.666666666666667;
+                        width: 100%;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+                }
+            }
+
+            /* コンセプト */
+            .concept-container {
+                padding: 0 15px;
+
+                h3 {
+                    height: 100%;
+                    font-size: 28px;
+                    letter-spacing: 1px;
+                    line-height: 1.5;
+                    margin: 0 auto 31px;
+                }
+                .concept-content {
+                    display: block;
+                    margin-bottom: 40px;
+
+                    .concept-text {
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+                    .concept-img {
+                        text-align: center;
+
+                        img {
+                            margin-bottom: 0;
+                            width: 60%;
+                        }
+                    }
+                }
+                .bg-text {
+                    font-size: 40px;
+                    letter-spacing: 2px;
+                    line-height: 1.675;
+                    height: 100%;
+                }
+            }
+
+            /* ワーク */
+            .works-container {
+                margin-top: 40px;
+                padding: 100px 15px 40px;
+
+                .headline-wrap {
+                    margin-bottom: 51px;
+                    text-align: center;
+                }
+                .works {
+                    padding: 0;
+
+                    .work {
+                        width: 100%;
+
+                        &:last-of-type {
+                            margin: 0;
+                        }
+                        .work-text {
+                            height: 100%;
+                            min-height: 134px;
+                            padding: 10px;
+                        }
+                    }
+                }
+                .btn-wrap {
+                    padding-bottom: 40px;
+                }
+                .bg-text {
+                    font-size: 40px;
+                    letter-spacing: 2px;
+                    line-height: 1.5;
+                    height: 100%;
+                    padding-left: 10px;
+                }
+            }
+
+            /* サービス */
+            .service-container {
+                padding-bottom: 64px;
+
+                .headline-wrap {
+                    margin: 0 0 51px 0;
+                    text-align: center;
+                }
+
+                .services{
+                    margin-bottom: 40px;
+
+                    .service {
+                        margin-bottom: 30px;
+
+                        .service-img{
+                            img {
+                                width: 100%;
+                            }
+                        }
+                        .service-text{
+                            font-size: 36px;
+                            letter-spacing: 1px;
+                            line-height: 2.5;
+                        }
+                    }
+                }
+                .bg-text {
+                    font-size: 40px;
+                    letter-spacing: 2px;
+                    line-height: 1.5;
+                    height: 100%;
+                    padding-right: 15px;
+                }
+            }
+
+            /* コンタクト */
+            .contact-container {
+                margin: 0;
+                padding: 100px 15px 40px;
+
+                .headline-wrap {
+                    text-align: center;
+                    margin-bottom: 51px;
+                }
+                .btn-wrap {
+                    margin-bottom: 40px;
+                }
+                .bg-text {
+                    font-size: 40px;
+                    letter-spacing: 2px;
+                    line-height: 1.5;
+                    color: $font-white;
+                    opacity: 0.05;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+
+    /* ------ コンタクトページ --------*/
+    #_contact {
+
+        /* ヘッダー */
+        header {
+            padding: 0 15px;
+            justify-content: space-between;
+
+            .header-right {
+                display: none;
+            }
+
+            .sp-menu-icon {
+                width: 30px;
+                height: 3px;
+                background-color: #FFF;
+                position: relative;
+                display: block;
+                cursor: pointer;
+
+                &::before {
+                    content: "";
+                    width: inherit;
+                    height: inherit;
+                    background-color: #FFF;
+                    position: absolute;
+                    top: -8px;
+                    box-sizing: inherit;
+                }
+                &::after {
+                    content: "";
+                    width: inherit;
+                    height: inherit;
+                    background-color: #FFF;
+                    position: absolute;
+                    top: 8px;
+                    box-sizing: inherit;
+                }
+            }
+            .sp-close-icon {
+                right: 13px;
+                top: 46px;
+            }
+        }
+
+        /* メイン */
+        main {
+
+            /* コンタクト */
+            .contact-container {
+                .main-img {
+                    height: 100%;
+
+                    h2 {
+                        font-size: 30px;
+                        letter-spacing: 3px;
+                        line-height: 1.6;
+                        margin-bottom: 40px;
+                    }
+                    .bg-text {
+                        font-size: 40px;
+                        letter-spacing: 2px;
+                        line-height: 1.5;
+                        color: #FFF;
+                        opacity: 0.05;
+                        padding: 0 0 40px 15px;
+                        height: 100%;
+                    }
+                }
+                form {
+                    padding: 0 15px 0;
+                    width: 100%;
+                    margin: 80px auto;
+
+                    div {
+
+                        .checkbox {
+                            p {
+                                margin-bottom: 13px;
+                            }
+                            label {
+                                display: block;
+                                margin-bottom: 5px;
+
+                                &:last-of-type {
+                                    margin-bottom: 0;
+                                }
+
+                                &::before {
+                                    margin-left: 0;
+                                    margin-right: 7px;
+                                }
+
+                                span {
+                                    letter-spacing: 0.8px;
+                                    line-height: 1.3125;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*----------------------
+スマホ(iphone6,7,8以外)
+----------------------*/
+@media screen and (max-width:559px){
+
+    /* ------ トップページ --------*/
+    #_top {
+        main {
+
+            /* スライダー */
+            .s-text {
+                width: 100%;
+                left: 0;
+                transform: translate(0, -50%);
+                text-align: center;
+            }
+
+            /* コンセプト */
+            .concept-container {
+                .headline-wrap {
+                    margin-left: 0;
+                }
+                h3 {
+                    width: 100%;
+                    font-size: 24px;
+                }
+                .concept-content {
+                    .concept-text {
+                        font-size: 14px;
+                    }
+                    .concept-img {
+                        img {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+
+            /* ワークス */
+            .works-container {
+                .works {
+                    display: block;
+
+                    .work:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+
+            /* サービス */
+            .service-container {
+                .services {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+/*----------------------
+iphone6,7,8
+----------------------*/
+@media screen and (max-width:375px){
+
+    /* ------ 共通 --------*/
+    #_top, #_contact {
+        .common-container {
+            .headline-wrap {
+                h2 {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    /* ------ トップページ --------*/
+    #_top {
+        main {
+
+            /* コンセプト */
+            .concept-container {
+                h3 {
+                    font-size: 24px;
+                }
+                .concept-content {
+                    .concept-text {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}

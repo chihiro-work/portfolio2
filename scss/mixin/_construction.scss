@@ -1,0 +1,27 @@
+.common-container {
+    width: 100%;
+    margin: 100px auto 0;
+
+    .headline-wrap {
+        margin-bottom: 70px;
+
+        h2 {
+            color :$font-black;
+            font-size: 60px;
+            letter-spacing: 3px;
+            line-height: 0.4;
+            font-weight: bold;
+            font-style: italic;
+            display: inline-block;
+            margin-right: 33px;
+        }
+
+        hr {
+            width: 200px;
+            height: 5px;
+            background-color: $font-black;
+            display: inline-block;
+            transform: translateY(-11px);
+        }
+    }
+}
