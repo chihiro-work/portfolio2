@@ -1,5 +1,5 @@
 $(function () {
-    //fv過ぎたら背景色を付ける
+    /* fv過ぎたら背景色を付ける */
     $(window).on('scroll', function () {
         let from_top = $(this).scrollTop();
 
