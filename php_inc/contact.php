@@ -5,7 +5,7 @@
     </div>
     <p>お気軽にご相談ください。</p>
     <div class="btn-wrap">
-        <a class="common-btn" href="contact.html">View more</a>
+        <a class="common-btn" href="contact.php">View more</a>
     </div>
     <span class="bg-text">Contact us</span>
 </section>

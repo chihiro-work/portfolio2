@@ -484,7 +484,7 @@ header .sp-menu-icon::after {
   transform: rotate(-45deg);
   position: absolute;
   top: 1px;
-  left: -23px;
+  left: -27px;
 }
 
 #_contact main .contact-container form div input[type="text"], #_contact main .contact-container form div input[type="tel"], #_contact main .contact-container form div input[type="email"], #_contact main .contact-container form div textarea {
