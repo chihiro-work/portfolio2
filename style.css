@@ -102,11 +102,14 @@ header .header-left h1 {
   font-style: italic;
   font-size: 26px;
   letter-spacing: 1.3px;
+}
+
+header .header-left h1 a {
   color: #FFF;
 }
 
 header .header-left h1 a:visited {
-  color: #fff;
+  color: #FFF;
 }
 
 header .header-right {
