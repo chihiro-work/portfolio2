@@ -7,7 +7,6 @@
     <meta name="description" content="ポートフォリオ2作品目です">
     <meta name="keywords" content="ポートフォリオ,2作品目,オシャレな家具屋風サイト">
     <link rel="stylesheet" href="css/reset.css">
-    <!--swiper-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/sp.css">
     <title>コンタクトページ</title>

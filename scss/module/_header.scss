@@ -22,6 +22,10 @@ header {
             font-size: 26px;
             letter-spacing: 1.3px;
             color: $font-white;
+
+            a:visited {
+                color: #fff;
+            }
         }
     }
     .header-right {

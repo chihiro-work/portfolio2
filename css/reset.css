@@ -11,7 +11,7 @@
     margin: 0;
     padding: 0;
   }
-  
+
   li {
     list-style-type: none;
   }
@@ -25,31 +25,31 @@
     line-height: 1;
     -webkit-text-size-adjust: 100%; /* 2 */
   }
-  
+
   /* Sections
      ========================================================================== */
-  
+
   /**
    * Remove the margin in all browsers.
    */
-  
+
   body {
     margin: 0;
   }
-  
+
   /**
    * Render the `main` element consistently in IE.
    */
-  
+
   main {
     display: block;
   }
-  
+
   /**
    * Correct the font size and margin on `h1` elements within `section` and
    * `article` contexts in Chrome, Firefox, and Safari.
    */
-  
+
   h1, h2 {
     font-size: 0;
     margin: 0;
@@ -59,7 +59,7 @@
     margin: 0;
   }
 
-  
+
   /* Grouping content
      ========================================================================== */
   
@@ -142,7 +142,7 @@
    * Prevent `sub` and `sup` elements from affecting the line height in
    * all browsers.
    */
-  
+
   sub,
   sup {
     font-size: 75%;
@@ -150,26 +150,29 @@
     position: relative;
     vertical-align: baseline;
   }
-  
+
   sub {
     bottom: -0.25em;
   }
-  
+
   sup {
     top: -0.5em;
   }
-  
+
   /* Embedded content
      ========================================================================== */
-  
+
   /**
    * Remove the border on images inside links in IE 10.
    */
-  
   img {
     border-style: none;
   }
-  
+
+  figure {
+    margin: 0;
+  }
+
   /* Forms
      ========================================================================== */
   

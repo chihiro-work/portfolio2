@@ -23,6 +23,16 @@
     @import "page/_contact-page";
 }
 
+/* ブログ一覧ページ */
+#_bloglist {
+    @import "page/_bloglist-page";
+}
+
+/* ブログ詳細ページ */
+#_blogitem {
+    @import "page/_blogitem-page";
+}
+
 /* フッター */
 @import "module/_footer";
 
