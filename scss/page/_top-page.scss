@@ -79,7 +79,7 @@ main {
         margin-top: 70px;
         width: 100%;
         padding: 104px 121px 70px 119px;
-        background-image: url("../img/works-bgi@2x.jpg");
+        background-image: url("img/works-bgi@2x.jpg");
         background-size: cover;
         background-attachment: fixed;
         background-position: center center;
@@ -113,23 +113,69 @@ main {
                 &:last-of-type {
                     margin-right: 0;
                 }
-
-                .work-img {
-                    width: 100%;
-
-                    img {
-                        width: 100%;
-                    }
-                }
                 .work-text {
                     background-color: #FFF;
-                    padding: 25px 20px;
-                    color: #141414;
+                    padding: 25px 20px 40px;
                     font-family: $jp-text;
-                    font-size: 16px;
                     letter-spacing: 0.8px;
                     line-height: 1.875;
                     height: 100%;
+                    color: #141414;
+                    position: relative;
+
+                    a {
+                        color: #141414;
+                    }
+                    h2 {
+                        font-size: 20px;
+                        margin-bottom: 10px;
+                    }
+                    .wp-block-gallery + p {
+                        padding-bottom: 20px;
+                    }
+                    img {
+                        width: 100% !important;
+                    }
+                    .more-link {
+                        position: relative;
+                        z-index: 0;
+                        margin-bottom: 30px;
+                        display: inline-block;
+
+                        &::before {
+                            content: "";
+                            display: block;
+                            width: 90px;
+                            transition: all 0.3s ease;
+                            height: 28px;
+                            background-color: #F7D43F;
+                            position: absolute;
+                            top: 0;
+                            left: -3px;
+                            z-index: -1;
+                        }
+                        &:hover {
+                            &::before {
+                                content: "";
+                                width: 0;
+                                height: 28px;
+                                position: absolute;
+                                top: 0;
+                                left: -3px;
+                                z-index: -1;
+                                background-color: transparent;
+                            }
+                        }
+                    }
+
+                    .post-date {
+                        // display: block;
+                        // text-align: right;
+                        font-size: 14px;
+                        position: absolute;
+                        bottom: 10px;
+                        right: 10px;
+                    }
                 }
             }
         }
@@ -142,8 +188,6 @@ main {
 
     //サービス
     .service-container {
-        padding-bottom: 70px;
-
         .headline-wrap {
             margin: 0 0 80px 15.27%;
 
@@ -164,6 +208,9 @@ main {
                 width: 100%;
 
                 .service-img {
+                    .blocks-gallery-grid {
+                        width: 100%;
+                    }
                     img {
                         width: 100%;
                     }
@@ -190,7 +237,7 @@ main {
 
     //コンタクト
     .contact-container {
-        background-image: url("../img/contact-bgi@2x.jpg");
+        background-image: url("img/contact-bgi@2x.jpg");
         width: 100%;
         padding: 109px 120px 70px 120px;
         background-size: cover;

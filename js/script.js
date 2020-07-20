@@ -1,47 +1,29 @@
 $(function () {
-    //fv過ぎたら背景色を付ける
+    /* fv過ぎたら背景色を付ける */
     $(window).on('scroll', function () {
         let from_top = $(this).scrollTop();
 
-        //トップページ用
-        if ($('body').attr('id') === ('_top')) {
+        //トップページの場合
+        if ($('body').attr('id') === '_top') {
+            const top_page_height = ($('#concept').offset().top - 196);
 
-            if (($(this).width()) > 1000) {
-                if (from_top > 656) {
-                    $('header').css('background-color', '#282F35');
-                } else {
-                    $('header').css('background-color', 'transparent');
-                }
-                return false;
+            if (from_top > top_page_height) {
+                $('header').css('background-color', '#282F35');
+            } else {
+                $('header').css('background-color', 'transparent');
             }
-            else if (($(this).width()) <= 1000) {
-                if (from_top > 450) {
-                    $('header').css('background-color', '#282F35');
-                } else {
-                    $('header').css('background-color', 'transparent');
-                }
-                return false;
-            }
-        }
+            return false;
 
-        //コンタクトページ用
-        else if ($('body').attr('id') === ('_contact')) {
-            if (($(this).width()) > 1440) {
-                if (from_top > 300) {
-                    $('header').css('background-color', '#282F35');
-                } else {
-                    $('header').css('background-color', 'transparent');
-                }
-                return false;
+        //トップページ以外の場合
+        } else {
+            const other_page_height = ($('#_js_fv_height').offset().top - 193);
+
+            if (from_top > other_page_height) {
+                $('header').css('background-color', '#282F35');
+            } else {
+                $('header').css('background-color', 'transparent');
             }
-            else if (($(this).width()) <= 959) {
-                if (from_top > 300) {
-                    $('header').css('background-color', '#282F35');
-                } else {
-                    $('header').css('background-color', 'transparent');
-                }
-                return false;
-            }
+            return false;
         }
     })
 
@@ -59,8 +41,33 @@ $(function () {
     $from.on('click', function () {
         $('.humbergur').removeClass('open');
         let position = $(this).attr('href');
-        let $target = $(position).offset().top;
-        $('body, html').animate({scrollTop: $target}, 800);
+        let target = $(position).offset().top;
+        $('body, html').animate({scrollTop: target}, 800);
         return false;
     })
+
+    /*============================================
+    IE対策
+    ============================================*/
+    //右サイドバーのposition: stickyの代替
+    //topに戻るボタンを付与
+    const userAgent = window.navigator.userAgent.toLowerCase();
+    
+    if (userAgent.indexOf('msie') != -1 || userAgent.indexOf('trident') != -1) {
+        const $btn_top = $('.btn-top');
+
+        //スクロール量によってトップに戻るボタンの表示・非表示を分ける
+        $(window).on('scroll', function () {
+            if ($(this).scrollTop() > 200) {
+                $btn_top.fadeIn()
+            } else {
+                $btn_top.fadeOut()
+            }
+        })
+
+        //クリックすると1番上に戻る
+        $btn_top.on('click', function () {
+            $('body, html').animate({ scrollTop: 0 }, 500);
+        })
+    }
 })

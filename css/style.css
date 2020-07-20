@@ -109,6 +109,10 @@ header .header-left h1 {
   color: #FFF;
 }
 
+header .header-left h1 a:visited {
+  color: #fff;
+}
+
 header .header-right {
   letter-spacing: 0.8px;
   line-height: 1.375;

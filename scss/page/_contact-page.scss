@@ -1,36 +1,38 @@
 main {
+
+    //メイン画像
+    .main-img {
+        background-image: url("img/contact-page-bgi@2x.jpg");
+        background-size: cover;
+        padding: 130px 0 38px;
+
+        h2 {
+            font-weight: bold;
+            font-style: italic;
+            font-size: 60px;
+            letter-spacing: 6px;
+            line-height: 0.8;
+            color: $font-white;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        .bg-text {
+            font-family: $jp-text;
+            text-align: left;
+            color: $font-white;
+            opacity: 0.1;
+            line-height: 1.2;
+            font-size: 70px;
+            padding-left: 200px;
+        }
+    }
     .contact-container {
         margin: 0;
         width: 100%;
 
-        .main-img {
-            background-image: url("../img/contact-page-bgi@2x.jpg");
-            height: 453px;
-            background-size: cover;
-
-            h2 {
-                font-weight: bold;
-                font-style: italic;
-                font-size: 60px;
-                letter-spacing: 6px;
-                line-height: 0.8;
-                color: $font-white;
-                text-align: center;
-                padding-top: 186px;
-                margin-bottom: 15px;
-            }
-            .bg-text {
-                font-family: $jp-text;
-                text-align: left;
-                color: $font-white;
-                opacity: 0.05;
-                padding-left: 48px;
-            }
-        }
-
         form {
             width: 700px;
-            margin: 97px auto 80px;
+            margin: 80px auto;
             
             div {
                 p {
@@ -81,7 +83,7 @@ main {
                                         transform: rotate(-45deg);
                                         position: absolute;
                                         top: 1px;
-                                        left: -23px;
+                                        left: -26px;
                                     }
                                 }
                             }
