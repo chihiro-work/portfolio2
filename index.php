@@ -72,7 +72,7 @@ Template Name: Home ～トップページ～
 
         </div>
         <div class="btn-wrap">
-            <a class="common-btn" href="<?php cat_link(6); ?>">View more</a>
+            <a class="common-btn" href="<?php cat_link(3); ?>">View more</a>
         </div>
         <span class="bg-text">Our Service</span>
     </section>
@@ -85,7 +85,7 @@ Template Name: Home ～トップページ～
         </div>
         <p>お気軽にご相談ください。</p>
         <div class="btn-wrap">
-            <a class="common-btn" href="<?php echo get_page_link(6); ?>">View more</a>
+            <a class="common-btn" href="<?php echo get_page_link(9); ?>">View more</a>
         </div>
         <span class="bg-text">Contact us</span>
     </section>
