@@ -21,10 +21,13 @@ header {
             font-style: italic;
             font-size: 26px;
             letter-spacing: 1.3px;
-            color: $font-white;
 
-            a:visited {
-                color: #fff;
+            a {
+                color: $font-white;
+
+                &:visited {
+                    color: $font-white;
+                }
             }
         }
     }
