@@ -33,7 +33,7 @@ Template Name: Home ～トップページ～
                 私たちは、オフィスに特化した空間デザイン専門としております。その理由は、「働きたくなる空間で仕事ができれば多くの人を幸せにできるのではないか」と考えるためです。そんな想いの株式会社Cresta Designだからこそできる空間デザインを提供させていただきます。
             </div>
             <div class="concept-img">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/concept-image@2x.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/concept-image@2x.jpg" alt="コンセプト画像">
             </div>
         </div>
         <span class="bg-text">Our Concept</span>

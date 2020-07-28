@@ -6,7 +6,7 @@
     <div class="works">
         <div class="work">
             <div class="work-img">
-                <img src="img/card-img01@2x.jpg" alt="">
+                <img src="img/card-img01@2x.jpg" alt="work画像1">
             </div>
             <div class="work-text">
                 新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
@@ -14,7 +14,7 @@
         </div>
         <div class="work">
             <div class="work-img">
-                <img src="img/card-img02@2x.jpg" alt="">
+                <img src="img/card-img02@2x.jpg" alt="work画像2">
             </div>
             <div class="work-text">
                 新規サイトを公開しました。今回のサイトは白と黒を基調にした
@@ -22,7 +22,7 @@
         </div>
         <div class="work">
             <div class="work-img">
-                <img src="img/card-img03@2x.jpg" alt="">
+                <img src="img/card-img03@2x.jpg" alt="work画像3">
             </div>
             <div class="work-text">
                 新規サイトを公開しました。今回のサイトは白と黒を基調にしたミニマルなデザインになっています。
