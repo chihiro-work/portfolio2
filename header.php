@@ -10,7 +10,14 @@
     <!--swiper-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
-    <title><?php wp_title(); ?></title>
+    <title>
+        <?php 
+            wp_title('');
+            echo ' | ';
+            bloginfo('name');
+        ?>
+    </title>
+
     <!-- WordPress管理画面などから設定した内容が反映される -->
     <?php wp_head(); ?>
 </head>
